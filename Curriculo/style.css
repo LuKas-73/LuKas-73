@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+}
+
+header {
+    padding: 40px 50px;
+    background-color: rgb(54, 9, 143);
+    color: white;
+    text-align: center;
+}
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.apresentacao {
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+header p > a {
+    color: white;
+}
+
+main {
+    padding-left: 70px;
+}
+section {
+    padding: 20px 0;
+}
+section > div {
+    padding-top: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    padding: 3px 0;
+}
+p, li {
+    font-family: 'VT323', monospace;
+    padding: 5px 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.periodo {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1px 0;
+}
+.local {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+    display: flex;
+}
+#habilidades1 {
+    padding-right: 30px;
+    border-right: solid 1px white;
+}
+#habilidades2 {
+    padding-left: 10px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(75, 0, 130, 0.8);
+}
+nav > ul {
+    display: flex;                                                                                                                                                                                                                                                                                                                      
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer {
+    background-color: rgb(34, 0, 102);
+    color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+footer > ul > li > a {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        height: 150px;
+    }
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    header {
+        padding-top: 170px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    #habilidades1 {
+        padding-right: 0px;
+        border-right: none;
+    }
+    #habilidades2 {
+        padding-left: 0px;
+    }
+}
