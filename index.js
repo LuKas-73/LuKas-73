@@ -141,12 +141,32 @@ async function estimateCommits(repos) {
 }
 
 /**
- * Generate progress bar using Unicode blocks
+ * Language to Icon mapping
  */
-function progressBar(percentage, length = 15) {
+const ICON_MAP = {
+  JavaScript: "js",
+  TypeScript: "ts",
+  HTML: "html",
+  CSS: "css",
+  PHP: "php",
+  Dart: "dart",
+  Java: "java",
+  Python: "python",
+  CSharp: "csharp",
+  Swift: "swift",
+  ShaderLab: "unity",
+  Vue: "vuejs",
+  React: "react",
+};
+
+/**
+ * Generate progress bar using Unicode blocks - Premium Style
+ */
+function progressBar(percentage, length = 12) {
   const filled = Math.round((percentage / 100) * length);
   const empty = length - filled;
-  return "🟪".repeat(filled) + "⬛".repeat(empty);
+  // Using a more modern look with a separator
+  return "█".repeat(filled) + "░".repeat(empty);
 }
 
 /**
@@ -164,9 +184,6 @@ async function main() {
     console.log("⚠️ No repos found. Skipping update.");
     return;
   }
-
-  // Log repo names for debugging
-  console.log("📋 Repos found:", repos.map((r) => r.name).join(", "));
 
   // 2. Aggregate languages
   const langBytes = {};
@@ -190,7 +207,7 @@ async function main() {
       percent: ((bytes / totalBytes) * 100).toFixed(1),
     }))
     .sort((a, b) => b.percent - a.percent)
-    .slice(0, 8);
+    .slice(0, 7); // Top 7
 
   console.log("💻 Languages:", langPercent);
 
@@ -200,31 +217,38 @@ async function main() {
 
   // 4. Build stats block
   const langRows = langPercent
-    .map(
-      ({ lang, percent }) =>
-        `| ${lang} | ${progressBar(parseFloat(percent))} | ${percent}% |`
-    )
+    .map(({ lang, percent }) => {
+      const icon = ICON_MAP[lang] || "code";
+      const iconUrl = `https://raw.githubusercontent.com/devicons/devicon/master/icons/${icon}/${icon}-original.svg`;
+      // Use fallback for those without direct devicons mapping or different names
+      const displayIcon = `<img src="${iconUrl}" width="16" height="16" />`;
+      
+      return `| ${displayIcon} **${lang}** | ${progressBar(parseFloat(percent))} | \`${percent}%\` |`;
+    })
     .join("\n");
 
   const newStats = `<!-- STATS START -->
 
 <div align="center">
-<table>
-<tr>
-<td align="center"><b>📦 Repositórios</b></td>
-<td align="center"><b>🔥 Commits</b></td>
-</tr>
-<tr>
-<td align="center"><code>${totalRepos}</code></td>
-<td align="center"><code>${totalCommits}</code></td>
-</tr>
-</table>
 
-#### 💻 Linguagens Mais Usadas
-
-| Linguagem | Progresso | Uso |
-|:---------:|:---------:|:---:|
+| Linguagem | Progresso | % |
+|:---------|:---------:|:---:|
 ${langRows}
+
+<br />
+
+<table>
+  <tr>
+    <td align="center" width="160">
+      <b>📦 Repositórios</b><br />
+      <code>${totalRepos}</code>
+    </td>
+    <td align="center" width="160">
+      <b>🔥 Commits</b><br />
+      <code>${totalCommits}</code>
+    </td>
+  </tr>
+</table>
 
 </div>
 
