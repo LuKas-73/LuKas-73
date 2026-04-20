@@ -53,21 +53,35 @@ async function fetchAllRepos() {
   const repos = [];
   let page = 1;
 
+  // Diagnostic: Check current user and scopes
+  try {
+    const user = await githubRequest("/user");
+    console.log(`👤 Authenticated as: ${user.login}`);
+    if (user.login?.toLowerCase() !== USERNAME.toLowerCase()) {
+      console.warn(`⚠️ Warning: Token belongs to ${user.login}, but we are looking for ${USERNAME}`);
+    }
+  } catch (e) {
+    console.error("❌ Failed to verify authenticated user. Token might be invalid.");
+  }
+
   // Try authenticated endpoint first
   if (TOKEN) {
-    console.log("📡 Trying authenticated endpoint /user/repos...");
+    console.log("📡 Fetching from /user/repos (All repos)...");
     while (true) {
+      // type=all returns everything (owner, member, etc.)
       const batch = await githubRequest(
-        `/user/repos?per_page=100&page=${page}&type=owner&affiliation=owner`
+        `/user/repos?per_page=100&page=${page}&type=all`
       );
       if (!Array.isArray(batch) || batch.length === 0) break;
+      
+      // Filter for owner just in case, but many users have repos in orgs they own
       repos.push(...batch);
       if (batch.length < 100) break;
       page++;
     }
   }
 
-  // Fall back to public endpoint if authenticated returned nothing
+  // Fall back to public endpoint ONLY if repos list is still 0
   if (repos.length === 0) {
     console.log("📡 Falling back to public endpoint /users/...");
     page = 1;
@@ -82,7 +96,9 @@ async function fetchAllRepos() {
     }
   }
 
-  return repos;
+  // Deduplicate by ID just in case
+  const uniqueRepos = Array.from(new Map(repos.map(r => [r.id, r])).values());
+  return uniqueRepos;
 }
 
 /**
