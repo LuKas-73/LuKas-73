@@ -4,12 +4,7 @@ const https = require("https");
 const USERNAME = "LuKas-73";
 const TOKEN = process.env.GH_TOKEN || "";
 
-if (!TOKEN) {
-  console.error("❌ GH_TOKEN is required to access private repos!");
-  console.error("   Create a PAT at: https://github.com/settings/tokens");
-  console.error("   Then run: set GH_TOKEN=your_token_here");
-  process.exit(1);
-}
+console.log(`🔑 Token present: ${TOKEN ? "YES (" + TOKEN.substring(0, 4) + "...)" : "NO"}`);
 
 /**
  * Make a GitHub API request
@@ -34,6 +29,10 @@ function githubRequest(path) {
       let data = "";
       res.on("data", (chunk) => (data += chunk));
       res.on("end", () => {
+        if (res.statusCode !== 200) {
+          console.error(`⚠️ API ${path} returned status ${res.statusCode}`);
+          console.error(`   Response: ${data.substring(0, 200)}`);
+        }
         try {
           resolve(JSON.parse(data));
         } catch {
@@ -48,21 +47,39 @@ function githubRequest(path) {
 }
 
 /**
- * Fetch all pages of repos
+ * Fetch all repos (tries authenticated first, falls back to public)
  */
 async function fetchAllRepos() {
   const repos = [];
   let page = 1;
 
-  while (true) {
-    // Use /user/repos (authenticated) to include private repos
-    const batch = await githubRequest(
-      `/user/repos?per_page=100&page=${page}&type=owner&affiliation=owner`
-    );
-    if (!Array.isArray(batch) || batch.length === 0) break;
-    repos.push(...batch);
-    if (batch.length < 100) break;
-    page++;
+  // Try authenticated endpoint first
+  if (TOKEN) {
+    console.log("📡 Trying authenticated endpoint /user/repos...");
+    while (true) {
+      const batch = await githubRequest(
+        `/user/repos?per_page=100&page=${page}&type=owner&affiliation=owner`
+      );
+      if (!Array.isArray(batch) || batch.length === 0) break;
+      repos.push(...batch);
+      if (batch.length < 100) break;
+      page++;
+    }
+  }
+
+  // Fall back to public endpoint if authenticated returned nothing
+  if (repos.length === 0) {
+    console.log("📡 Falling back to public endpoint /users/...");
+    page = 1;
+    while (true) {
+      const batch = await githubRequest(
+        `/users/${USERNAME}/repos?per_page=100&page=${page}&type=owner`
+      );
+      if (!Array.isArray(batch) || batch.length === 0) break;
+      repos.push(...batch);
+      if (batch.length < 100) break;
+      page++;
+    }
   }
 
   return repos;
@@ -83,41 +100,20 @@ async function estimateCommits(repos) {
 
   for (const repo of repos) {
     try {
-      // Get contributor stats — our commits
       const contributors = await githubRequest(
-        `/repos/${USERNAME}/${repo.name}/contributors?per_page=1&anon=true`
+        `/repos/${USERNAME}/${repo.name}/contributors?per_page=100&anon=true`
       );
 
       if (Array.isArray(contributors)) {
-        for (const c of contributors) {
-          if (
-            c.login &&
-            c.login.toLowerCase() === USERNAME.toLowerCase()
-          ) {
-            total += c.contributions || 0;
-            break;
-          }
-        }
-        // If user is the only contributor or owner, count first
-        if (
-          contributors.length === 1 &&
-          !contributors[0].login
-        ) {
-          total += contributors[0].contributions || 0;
-        } else if (
-          contributors.length === 1 &&
-          contributors[0].login?.toLowerCase() === USERNAME.toLowerCase()
-        ) {
-          // Already counted above
-        } else if (contributors.length > 0) {
-          // Check if we found user above, if not try first match
-          const me = contributors.find(
-            (c) => c.login?.toLowerCase() === USERNAME.toLowerCase()
-          );
-          if (!me && repo.fork === false) {
-            // Likely the owner with different casing — count first contributor
-            total += contributors[0]?.contributions || 0;
-          }
+        // Find our user in contributors
+        const me = contributors.find(
+          (c) => c.login && c.login.toLowerCase() === USERNAME.toLowerCase()
+        );
+        if (me) {
+          total += me.contributions || 0;
+        } else if (contributors.length === 1 && !repo.fork) {
+          // If only 1 contributor and it's our repo, count them
+          total += contributors[0]?.contributions || 0;
         }
       }
     } catch {
@@ -148,13 +144,23 @@ async function main() {
   const totalRepos = repos.length;
   console.log(`📦 Total repos: ${totalRepos}`);
 
+  if (totalRepos === 0) {
+    console.log("⚠️ No repos found. Skipping update.");
+    return;
+  }
+
+  // Log repo names for debugging
+  console.log("📋 Repos found:", repos.map((r) => r.name).join(", "));
+
   // 2. Aggregate languages
   const langBytes = {};
   for (const repo of repos) {
     try {
       const langs = await fetchRepoLanguages(repo.name);
-      for (const [lang, bytes] of Object.entries(langs)) {
-        langBytes[lang] = (langBytes[lang] || 0) + bytes;
+      if (langs && typeof langs === "object" && !langs.message) {
+        for (const [lang, bytes] of Object.entries(langs)) {
+          langBytes[lang] = (langBytes[lang] || 0) + bytes;
+        }
       }
     } catch {
       // Skip
@@ -168,7 +174,7 @@ async function main() {
       percent: ((bytes / totalBytes) * 100).toFixed(1),
     }))
     .sort((a, b) => b.percent - a.percent)
-    .slice(0, 8); // Top 8 languages
+    .slice(0, 8);
 
   console.log("💻 Languages:", langPercent);
 

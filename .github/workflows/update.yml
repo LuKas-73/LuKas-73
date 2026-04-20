@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 jobs:
   update-stats:
@@ -33,5 +31,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
+          git pull --rebase origin main || true
           git add README.md
           git diff --staged --quiet || (git commit -m "📊 Auto-update profile stats" && git push)
