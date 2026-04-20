@@ -2,8 +2,10 @@ name: 📊 Update Profile Stats
 
 on:
   schedule:
-    - cron: "0 6 * * *" # Every day at 6:00 UTC (3:00 AM BRT)
-  workflow_dispatch: # Manual trigger
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   update-stats:
@@ -14,11 +16,13 @@ jobs:
     steps:
       - name: 📥 Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: 🟢 Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: 🚀 Run stats script
         env:
@@ -30,5 +34,4 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add README.md
-          git diff --staged --quiet || git commit -m "📊 Auto-update profile stats"
-          git push
+          git diff --staged --quiet || (git commit -m "📊 Auto-update profile stats" && git push)
