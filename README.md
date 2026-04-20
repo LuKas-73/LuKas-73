@@ -6,6 +6,7 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Apaixonado+por+tecnologia+%F0%9F%92%9C;Criando+solu%C3%A7%C3%B5es+que+importam;Sempre+aprendendo+algo+novo" alt="Typing SVG" /></a>
 
+---
 ### 🛠️ Tech Stack
 
 <img src="https://skillicons.dev/icons?i=js,ts,php,nodejs,html,css,flutter,dart&theme=dark" />
@@ -53,16 +54,3 @@
 
 ---
 
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=LuKas-73&bg_color=0d1117&color=a855f7&line=a855f7&point=c9d1d9&area_color=a855f7&area=true&hide_border=true" width="95%" />
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=LuKas-73&style=for-the-badge&color=a855f7&label=VISITAS+AO+PERFIL" />
-
-</div>
