@@ -4,12 +4,12 @@
 
 **`Desenvolvedor Full Stack`**
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Apaixonado+por+tecnologia;Criando+solu%C3%A7%C3%B5es+que+importam;Sempre+aprendendo+algo+novo" alt="Typing SVG" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Apaixonado+por+tecnologia+%F0%9F%92%9C;Criando+solu%C3%A7%C3%B5es+que+importam;Sempre+aprendendo+algo+novo" alt="Typing SVG" /></a>
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=LuKas-73&show_icons=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&icon_color=a855f7&border_color=1a1b27&hide_border=false" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=LuKas-73&background=0D1117&border=1a1b27&stroke=a855f7&ring=a855f7&fire=a855f7&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=a855f7&sideLabels=a855f7&dates=6e7681" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=LuKas-73&show_icons=true&count_private=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&icon_color=a855f7&border_color=1a1b27&hide_border=false" width="49%" />
+<img src="https://streak-stats.demolab.com?user=LuKas-73&background=0D1117&border=1a1b27&stroke=a855f7&ring=a855f7&fire=a855f7&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=a855f7&sideLabels=a855f7&dates=6e7681" width="49%" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuKas-73&layout=compact&count_private=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&border_color=1a1b27&hide_border=false" width="42%" />
 
