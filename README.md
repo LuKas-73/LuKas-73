@@ -42,8 +42,8 @@
 <td align="center"><b>🔥 Commits</b></td>
 </tr>
 <tr>
-<td align="center"><code>5</code></td>
-<td align="center"><code>52</code></td>
+<td align="center"><code>29</code></td>
+<td align="center"><code>174</code></td>
 </tr>
 </table>
 
@@ -51,10 +51,14 @@
 
 | Linguagem | Progresso | Uso |
 |:---------:|:---------:|:---:|
-| Java | 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪⬛⬛⬛ | 81.6% |
-| HTML | 🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 8.2% |
-| JavaScript | 🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 7.2% |
-| CSS | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 3.0% |
+| HTML | 🟪🟪🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 29.7% |
+| TypeScript | 🟪🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 21.2% |
+| JavaScript | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 14.2% |
+| PHP | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 13.8% |
+| Dart | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 10.6% |
+| CSS | 🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 4.1% |
+| ShaderLab | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 2.1% |
+| C# | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 2.1% |
 
 </div>
 
