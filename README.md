@@ -42,8 +42,8 @@
 <td align="center"><b>🔥 Commits</b></td>
 </tr>
 <tr>
-<td align="center"><code>5</code></td>
-<td align="center"><code>52</code></td>
+<td align="center"><code>0</code></td>
+<td align="center"><code>0</code></td>
 </tr>
 </table>
 
@@ -51,9 +51,7 @@
 
 | Linguagem | Progresso | Uso |
 |:---------:|:---------:|:---:|
-| Java | 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪⬛⬛ | 88.0% |
-| HTML | 🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 8.8% |
-| CSS | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 3.2% |
+
 
 </div>
 
