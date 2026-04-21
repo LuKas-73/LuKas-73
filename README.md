@@ -24,29 +24,31 @@
 <!-- STATS START -->
 
 <div align="center">
+
+| Linguagem | Progresso | % |
+|:---------|:---------:|:---:|
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ████░░░░░░░░ | `29.7%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | ███░░░░░░░░░ | `21.1%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | ██░░░░░░░░░░ | `14.2%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ██░░░░░░░░░░ | `13.8%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `10.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `4.1%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `2.1%` |
+
+<br />
+
 <table>
-<tr>
-<td align="center"><b>📦 Repositórios</b></td>
-<td align="center"><b>🔥 Commits</b></td>
-</tr>
-<tr>
-<td align="center"><code>29</code></td>
-<td align="center"><code>174</code></td>
-</tr>
+  <tr>
+    <td align="center" width="160">
+      <b>📦 Repositórios</b><br />
+      <code>29</code>
+    </td>
+    <td align="center" width="160">
+      <b>🔥 Commits</b><br />
+      <code>182</code>
+    </td>
+  </tr>
 </table>
-
-#### 💻 Linguagens Mais Usadas
-
-| Linguagem | Progresso | Uso |
-|:---------:|:---------:|:---:|
-| HTML | 🟪🟪🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 29.7% |
-| TypeScript | 🟪🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 21.2% |
-| JavaScript | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 14.2% |
-| PHP | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 13.8% |
-| Dart | 🟪🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 10.6% |
-| CSS | 🟪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 4.1% |
-| ShaderLab | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 2.1% |
-| C# | ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ | 2.1% |
 
 </div>
 
