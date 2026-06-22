@@ -41,7 +41,7 @@
   <tr>
     <td align="center" width="160">
       <b>📦 Repositórios</b><br />
-      <code>30</code>
+      <code>31</code>
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
