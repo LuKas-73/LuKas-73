@@ -27,13 +27,13 @@
 
 | Linguagem | Progresso | % |
 |:---------|:---------:|:---:|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | █████░░░░░░░ | `40.2%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `17.6%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | ██░░░░░░░░░░ | `16.0%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | ██░░░░░░░░░░ | `12.9%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `6.0%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `3.4%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `1.2%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | █████░░░░░░░ | `44.3%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `16.5%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | ██░░░░░░░░░░ | `15.1%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `11.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `5.7%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `3.2%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `1.1%` |
 
 <br />
 
@@ -45,7 +45,7 @@
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
-      <code>221</code>
+      <code>222</code>
     </td>
   </tr>
 </table>
