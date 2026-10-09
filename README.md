@@ -27,11 +27,11 @@
 
 | Linguagem | Progresso | % |
 |:---------|:---------:|:---:|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ███████░░░░░ | `54.8%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `13.3%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `12.3%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ███████░░░░░ | `55.0%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `13.2%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `12.2%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `9.5%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `4.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `4.5%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `2.5%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `0.9%` |
 
@@ -45,7 +45,7 @@
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
-      <code>230</code>
+      <code>231</code>
     </td>
   </tr>
 </table>
