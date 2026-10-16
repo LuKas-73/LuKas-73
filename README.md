@@ -27,13 +27,13 @@
 
 | Linguagem | Progresso | % |
 |:---------|:---------:|:---:|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ██████░░░░░░ | `52.0%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `17.3%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `11.9%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `9.0%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `4.3%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ██████░░░░░░ | `52.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `17.1%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `11.7%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `8.9%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | █░░░░░░░░░░░ | `4.2%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `2.7%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `0.9%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="16" height="16" /> **ShaderLab** | ░░░░░░░░░░░░ | `0.8%` |
 
 <br />
 
@@ -45,7 +45,7 @@
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
-      <code>246</code>
+      <code>249</code>
     </td>
   </tr>
 </table>
