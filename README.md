@@ -27,9 +27,9 @@
 
 | Linguagem | Progresso | % |
 |:---------|:---------:|:---:|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ███████░░░░░ | `56.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ███████░░░░░ | `56.8%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `15.4%` |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `10.6%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `10.5%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `8.1%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="16" height="16" /> **Dart** | ░░░░░░░░░░░░ | `3.8%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="16" height="16" /> **CSS** | ░░░░░░░░░░░░ | `2.8%` |
@@ -45,7 +45,7 @@
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
-      <code>261</code>
+      <code>263</code>
     </td>
   </tr>
 </table>
