@@ -27,7 +27,7 @@
 
 | Linguagem | Progresso | % |
 |:---------|:---------:|:---:|
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ██████░░░░░░ | `53.9%` |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="16" height="16" /> **PHP** | ██████░░░░░░ | `54.0%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="16" height="16" /> **HTML** | ██░░░░░░░░░░ | `15.4%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ts/ts-original.svg" width="16" height="16" /> **TypeScript** | █░░░░░░░░░░░ | `12.2%` |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/js/js-original.svg" width="16" height="16" /> **JavaScript** | █░░░░░░░░░░░ | `7.7%` |
@@ -41,11 +41,11 @@
   <tr>
     <td align="center" width="160">
       <b>📦 Repositórios</b><br />
-      <code>34</code>
+      <code>35</code>
     </td>
     <td align="center" width="160">
       <b>🔥 Commits</b><br />
-      <code>268</code>
+      <code>271</code>
     </td>
   </tr>
 </table>
